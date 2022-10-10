@@ -13,7 +13,7 @@ int main() {
     string stringPattern = "\\b"+inputString+"\\b";
     regex pattern(stringPattern);
 
-    if(regex_match(inputString, pattern)) 
+    if(regex_search(sentence, pattern)) 
         cout << endl << "string found !";
     else
         cout << endl << "string not found !";
